@@ -1,8 +1,40 @@
 # 📚 Scholar - Student Record Management System
 
+## 🌐 Live Demo
+
+🚀 **[View Live Demo](https://your-demo-url.vercel.app)** 
+
+> 💡 **Quick Start**: Try the admin dashboard with `admin@scholar.com` / `admin123` or create a teacher account to explore full features.
+
+---
+
 ## 🎯 Overview
 
 **Scholar** is a modern, feature-rich student record management system built with **Vite + React + Tailwind CSS**. It provides an intuitive interface for teachers to manage student records, calculate grades automatically, and generate professional PDF reports. An admin dashboard allows administrators to monitor all registered teachers.
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home - User Type Selection
+![Home Screen](./src/assets/home.png)
+*Choose between Teacher Login or Admin Login to get started*
+
+### 👨‍🏫 Teacher Portal
+![Teacher Portal](./src/assets/teacher-portal.png)
+*Complete dashboard with file system navigation, student management, and real-time statistics*
+
+### 📝 Student Records Management
+![Student Records](./src/assets/stu-record.png)
+*Add, edit, delete, and search student records with automatic grade calculation*
+
+### 📄 PDF Report Generation
+![Report Card](./src/assets/report-card.png)
+*Professional PDF reports with student details, grades, and summary statistics*
+
+### 👨‍💼 Admin Dashboard
+![Admin Dashboard](./src/assets/admin-dashboard.png)
+*Monitor all registered teachers, view system statistics, and manage user accounts*
 
 ---
 
@@ -105,19 +137,6 @@ npm install tailwindcss @tailwindcss/vite
 ```
 
 ### Step 4: Configure Tailwind (tailwind.config.js)
-```javascript
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react(),
-     tailwindcss(),
-    ],
-})
-
-```
 
 ### Step 5: Add Tailwind Directives (src/index.css)
 ```css
@@ -258,15 +277,22 @@ The application will be available at `http://localhost:5173`
 
 ```
 scholar/
+├── public/                    # Static assets
 ├── src/
-│   ├── App.jsx          # Main application component
-│   ├── index.css        # Tailwind directives
-│   └── main.jsx         # Entry point
-├── index.html           # HTML template
-├── package.json         # Dependencies
-├── tailwind.config.js   # Tailwind configuration
-├── vite.config.js       # Vite configuration
-└── README.md            # This file
+│   ├── assets/               # Images and static resources
+│   ├── data/
+│   │   └── db.js            # IndexedDB database layer
+│   ├── App.jsx              # Main application component
+│   ├── App.css              # Component styles
+│   ├── index.css            # Global styles with Tailwind imports
+│   └── main.jsx             # Application entry point
+├── .gitignore               # Git ignore rules
+├── eslint.config.js         # ESLint configuration
+├── index.html               # HTML template
+├── package.json             # Dependencies and scripts
+├── package-lock.json        # Dependency lock file
+├── README.md                # Project documentation
+└── vite.config.js           # Vite build configuration
 ```
 
 ---
@@ -274,16 +300,6 @@ scholar/
 ##  Contributing
 
 Feel free to fork, modify, and enhance this project!
-
-### Ideas for Enhancement
-- Database integration (MongoDB, Firebase)
-- Email notifications for teachers
-- Multiple assessments per subject
-- Attendance tracking
-- Dark/Light theme toggle
-- Multi-language support
-- Backup and restore functionality
-- Advanced analytics and charts
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## 🌐 Live Demo
 
-🚀 **[View Live Demo](https://your-demo-url.vercel.app)** 
+🚀 **[View Live Demo](https://scholar-w9pa.onrender.com)** 
 
 > 💡 **Quick Start**: Try the admin dashboard with `admin@scholar.com` / `admin123` or create a teacher account to explore full features.
 
